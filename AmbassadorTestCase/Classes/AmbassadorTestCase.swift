@@ -10,24 +10,24 @@ import XCTest
 import Embassy
 import EnvoyAmbassador
 
-public class AmbassadorTestCase: XCTestCase {
+open class AmbassadorTestCase: XCTestCase {
     var router: Router!
     var eventLoop: EventLoop!
     var server: HTTPServer!
     var eventLoopThreadCondition: NSCondition!
     var eventLoopThread: Thread!
 
-    public init(router: Router) {
+    open init(router: Router) {
         super.init()
         self.router = router
     }
 
-    public override func setUp() {
+    open override func setUp() {
         super.setUp()
         self.startServer()
     }
 
-    public override func tearDown() {
+    open override func tearDown() {
         super.tearDown()
         self.terminateServer()
     }
