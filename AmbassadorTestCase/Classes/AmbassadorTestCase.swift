@@ -17,7 +17,7 @@ open class AmbassadorTestCase: XCTestCase {
     var eventLoopThreadCondition: NSCondition!
     var eventLoopThread: Thread!
 
-    open init(router: Router) {
+    public init(router: Router) {
         super.init()
         self.router = router
     }
