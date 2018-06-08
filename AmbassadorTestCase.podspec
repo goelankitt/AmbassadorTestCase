@@ -7,9 +7,10 @@
 #
 
 Pod::Spec.new do |s|
+  s.swift_version = '4.1.2'
   s.name             = 'AmbassadorTestCase'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of AmbassadorTestCase.'
+  s.summary          = 'AmbassadorTestCase makes stubbing easier in your test cases.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +18,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'AmbassadorTestCase makes stubbing easier in your test cases. It sets up a local embassy server when the setup function of your test is called and terminates the server when tear down function is called.'
 
   s.homepage         = 'https://github.com/ankit1ank/AmbassadorTestCase'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -37,6 +36,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'XCTest'
+  s.dependency 'EnvoyAmbassador', '~> 4.0'
 end
