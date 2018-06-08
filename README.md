@@ -1,15 +1,16 @@
 # AmbassadorTestCase
 
-[![CI Status](https://img.shields.io/travis/ankit1ank/AmbassadorTestCase.svg?style=flat)](https://travis-ci.org/ankit1ank/AmbassadorTestCase)
-[![Version](https://img.shields.io/cocoapods/v/AmbassadorTestCase.svg?style=flat)](https://cocoapods.org/pods/AmbassadorTestCase)
-[![License](https://img.shields.io/cocoapods/l/AmbassadorTestCase.svg?style=flat)](https://cocoapods.org/pods/AmbassadorTestCase)
-[![Platform](https://img.shields.io/cocoapods/p/AmbassadorTestCase.svg?style=flat)](https://cocoapods.org/pods/AmbassadorTestCase)
+AmbassadorTestCase sets up a local server when setup function of your tests is called and terminated the server when tearDown is called.
 
-## Example
+AmbassadorTestCase is built on [Ambassador](https://github.com/envoy/Ambassador)
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Usage
+
+Subclass your test classes from AmbassadorTestCase and provide a router that specifies the responses for various endpoints.
 
 ## Requirements
+
+AmbassadorTestCase requires XCTest case and hence it can only be added to your test targets(both Unit Test and UI Test).
 
 ## Installation
 
@@ -17,7 +18,7 @@ AmbassadorTestCase is available through [CocoaPods](https://cocoapods.org). To i
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AmbassadorTestCase'
+pod 'AmbassadorTestCase', :git => 'https://github.com/ankit1ank/AmbassadorTestCase'
 ```
 
 ## Author
