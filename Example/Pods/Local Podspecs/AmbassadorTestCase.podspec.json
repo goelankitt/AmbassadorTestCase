@@ -1,0 +1,22 @@
+{
+  "name": "AmbassadorTestCase",
+  "version": "0.1.0",
+  "summary": "A short description of AmbassadorTestCase.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ankit1ank/AmbassadorTestCase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ankit1ank": "goelankit@protonmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ankit1ank/AmbassadorTestCase.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AmbassadorTestCase/Classes/**/*"
+}

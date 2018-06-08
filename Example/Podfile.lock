@@ -1,0 +1,16 @@
+PODS:
+  - AmbassadorTestCase (0.1.0)
+
+DEPENDENCIES:
+  - AmbassadorTestCase (from `../`)
+
+EXTERNAL SOURCES:
+  AmbassadorTestCase:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AmbassadorTestCase: dc54f1e4025fedf36d24e870c08918933ace32ac
+
+PODFILE CHECKSUM: e7a60f2c286805aedbd7deabff6381c336989a9d
+
+COCOAPODS: 1.5.3
