@@ -17,17 +17,17 @@ public class AmbassadorTestCase: XCTestCase {
     var eventLoopThreadCondition: NSCondition!
     var eventLoopThread: Thread!
 
-    init(router: Router) {
+    public init(router: Router) {
         super.init()
         self.router = router
     }
 
-    override func setUp() {
+    public override func setUp() {
         super.setUp()
         self.startServer()
     }
 
-    override func tearDown() {
+    public override func tearDown() {
         super.tearDown()
         self.terminateServer()
     }
