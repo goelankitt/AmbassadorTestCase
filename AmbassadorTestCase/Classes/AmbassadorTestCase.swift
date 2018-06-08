@@ -11,7 +11,7 @@ import Embassy
 import EnvoyAmbassador
 
 open class AmbassadorTestCase: XCTestCase {
-    var router: Router!
+    public var router: Router!
     var eventLoop: EventLoop!
     var server: HTTPServer!
     var eventLoopThreadCondition: NSCondition!
