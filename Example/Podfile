@@ -1,0 +1,6 @@
+use_frameworks!
+target 'AmbassadorTestCase_Tests' do
+  pod 'AmbassadorTestCase', :path => '../'
+  
+  
+end
