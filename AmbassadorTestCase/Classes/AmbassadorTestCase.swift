@@ -10,7 +10,7 @@ import XCTest
 import Embassy
 import EnvoyAmbassador
 
-class AmbassadorTestCase: XCTestCase {
+public class AmbassadorTestCase: XCTestCase {
     var router: Router!
     var eventLoop: EventLoop!
     var server: HTTPServer!
