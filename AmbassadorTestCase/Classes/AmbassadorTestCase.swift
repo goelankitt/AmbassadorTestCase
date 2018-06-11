@@ -17,11 +17,6 @@ open class AmbassadorTestCase: XCTestCase {
     var eventLoopThreadCondition: NSCondition!
     var eventLoopThread: Thread!
 
-    public init(router: Router) {
-        super.init()
-        self.router = router
-    }
-
     open override func setUp() {
         super.setUp()
         self.startServer()
